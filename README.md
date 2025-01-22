@@ -49,3 +49,25 @@ For questions or support, reach out to:
 Your Name: anubnair90@gmail.com
 
 GitHub: https://github.com/anubnair
+
+## Recommendations for Storing Data and Improving Performance:
+
+#### 1. Storing Results in a Database
+
+For persistent storage and better management of the fetched profiles, it is recommended to store the results in a database. This will allow you to:
+
+- Easily manage large volumes of profile data.
+- Implement better data retrieval and querying capabilities.
+- Ensure data integrity by persisting profiles between requests.
+- Note: Talent profile also doenot update profile always,
+so can have a timestamp, and update the profile data once in a month or so 
+
+You can think of integrating any relational (e.g., PostgreSQL, MySQL) or NoSQL (e.g., MongoDB, Cassandra, dynamoDB) database depending on your needs.
+
+### 2. Using Caching (Redis) for Faster Profile Fetching
+
+To improve performance and speed up profile fetching, especially if you are frequently accessing the same profiles, it is recommend introducing a caching layer such as **Redis**. Caching will allow you to:
+
+- Retrieve profiles much faster by reducing the need to repeatedly fetch data from external APIs or databases.
+- Lower the load on external services and databases.
+- Improve scalability and response times.
