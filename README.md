@@ -40,6 +40,7 @@ http://127.0.0.1:8080/profile/{wallet Address}
 Run the test suite to ensure everything works as expected:
 
 ```
+python -m unittest discover -s tests
 ```
 
 ## 💬 Contact
